@@ -1,0 +1,12 @@
+Script started on Wed Sep 14 14:26:15 2011
+bash: alias: python: not found
+bash: alias: =Python3: not found
+[?1034hbash-3.2$ Python3 recognizes.py
+0101
+00101
+10101
+None
+bash-3.2$ exit
+exit
+
+Script done on Wed Sep 14 14:26:21 2011

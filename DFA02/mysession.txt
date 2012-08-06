@@ -1,0 +1,7 @@
+Script started on Wed Sep 14 11:35:46 2011
+bash: alias: python: not found
+bash: alias: =Python3: not found
+[?1034hbash-3.2$ rspec spec/[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on Wed Sep 14 11:36:00 2011

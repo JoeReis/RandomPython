@@ -1,0 +1,20 @@
+Script started on Wed Sep 14 18:43:14 2011
+bash: alias: python: not found
+bash: alias: =Python3: not found
+[?1034hbash-3.2$ exit[K[K[K[KPython3 L00.py
+001 True
+00 True
+0101000 True
+0100010 True
+0101010 True
+0101001 True
+010100 True
+011111 False
+0111111 False
+111101 False
+1011111 False
+101111 False
+bash-3.2$ exit
+exit
+
+Script done on Wed Sep 14 18:43:23 2011

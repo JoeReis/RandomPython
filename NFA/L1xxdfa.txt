@@ -1,0 +1,30 @@
+Joseph Reis
+CS 3100, HW #4
+L1xxdfa
+9/22/2011
+
+i. Mention the three accepted strings you tested on. Describe one accepting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was accepted).
+
+The following test strings were accepted by the NFA:
+
+1011
+010
+1111
+
+
+Description of accepting run on 1011:
+
+The string 1011 enters the NFA at q0. The 1 exists in both q0 and q1. The 0 still exists in q0, and 0 is sent to q2. The second to last 1 character is sent to q2, and still exists in q0 and q1. The final 1 is exists in all three states, including the accepting state q2. It is rejected in states q0 and q1, but accepted in q2. Hence, the string 1011 is accepted by the NFA.
+
+
+ii. Mention the three rejected strings you tested on. Describe one rejecting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was not accepted).
+
+The following test strings were rejected by the NFA:
+
+100
+0101
+001
+
+Description of rejecting run on 100:
+
+String 100 enters the NFA at q0. The 1 still exists in q0, and also travels to q1. The next 0 exists in q0 and goes to q2. Lastly, the final 0 is rejected in both states q0 and q2.

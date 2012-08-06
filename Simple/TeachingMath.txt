@@ -1,0 +1,11 @@
+﻿Teaching Math - Thoughts
+Joseph Reis
+CS3100, Assignment 1
+
+Having recently become a father, and holding a Math BS, Conrad Wolfram's TED talk, “Teaching Kids Real Math With Computers”, resonated very deeply with me. 
+
+When I was a child many years ago, I did not take much of an interest in the math classes taught in the American public school system. It wasn't because I was intellectually inferior, but rather, bored. From elementary school to high school, I felt the math curriculum focused more on rote action versus enabling the intuitive understanding and appreciation of mathematics. Pretty sad, really. Math is one of the foundations of thought. A strong math foundation is not just a body of knowledge, equations, and formulas, but a way of thinking about and analyzing the world.
+
+The public (and private school) teaching process hasn't changed much since I was a kid, so I will take the initiative to teach my son math in a way he will enjoy and appreciate. One addition I will incorporate into his math education is computer programming. We will use the Scratch program to teach him basic programming logic and flow. Programming is something I wish I would have learned when I was a kid. It reinforces logical thinking, and provides a hands-on (and fun) way to explore various subject matter, including math.
+
+Incorporating programming into a class such as CS3100 will enrich the material beyond its traditional theoretical orientation, and provide a framework for deeper application and understanding of the material.

@@ -1,0 +1,19 @@
+﻿Turing Machines and Complexity
+Joseph Reis
+CS3100, Assignment 1
+
+In lecture notes 1, Prof. Gopalakrishnan writes, “...it is true that researchers engaged in studying even these problems employ Turing machines as one oftheir important formal models. This is because any result obtained for Turing machines can be translated intocorresponding results for real computers.” Let's explore this statement a bit more, and briefly see how a Turing machine works and is used for determining complexity, looking specifically at the Church-Turing thesis.
+
+Turing Machine
+
+A Turing machine is a thought experiment that attempts to mathematically model a general computing machine. Think of a Turing Machine as a device that manipulates symbols on a piece of tape given a set of logical instructions. With regard to algorithms, the belief is widely held that a Turing machine can simulate the logic of any algorithm; it a problem can be solved by an algorithm, then this algorithm can be represented and solved by a Turing machine. Because of their ease of use, Turing machines are used to solve problems related to algorithm complexity.
+
+There are several types of Turing machines: deterministic, non-deterministic, probabilistic, etc. We will focus on deterministic Turing machines in this essay.
+
+Complexity
+
+Complexity measures the amount of time and space necessary for an algorithm to complete its task. A deterministic Turing machine is commonly used to analyze algorithmic complexity. To measure complexity with a Turing machine, simply look at the number of state transitions required by a Turing machine to operate on an input and produce an output. A problem can be solved in x amount of time if the Turing machine operating in x time solves this problem. The benefit of using a Turing machine and looking at state transitions is that it is independent of technical factors – CPU, bandwidth, etc.
+
+Church-Turing Thesis
+
+The Church-Turing thesis states that “everything computable is computable by a Turing machine”. This brings us full circle to Prof. Gopalakrishnan's point that “..any result obtained for Turing machines can be translated intocorresponding results for real computers.” Although not formally proven, the Church-Turing thesis provides an intuitive framework for using Turing machines in analyzing algorithms and general computation problems.

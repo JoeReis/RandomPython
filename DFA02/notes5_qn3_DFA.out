@@ -1,0 +1,24 @@
+Script started on Wed Sep 14 13:45:48 2011
+bash: alias: python: not found
+bash: alias: =Python3: not found
+[?1034hbash-3.2$ exitPython3 notes5_qn3_DFA.py
+This DFA accepts all binary numbers divisible by 3. Notice the obvious - all binary numbers divisible by 3 occur every third position after 3 (11 in binary).This means you simply need to make a DFA that initially accepts 11, and accepts every third number from 110000..., such as
+110000..., 10010000...., 11110000....
+
+Strings that are accepted
+1100 True
+11 True
+11110 True
+1111 True
+10010 True
+
+Strings that are rejected
+100 False
+101 False
+101 False
+111 False
+1010 False
+bash-3.2$ exit
+exit
+
+Script done on Wed Sep 14 13:45:52 2011

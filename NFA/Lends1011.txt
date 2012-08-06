@@ -1,0 +1,30 @@
+Joseph Reis
+CS 3100, HW #4
+Lends1011
+9/22/2011
+
+i. Mention the three accepted strings you tested on. Describe one accepting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was accepted).
+
+The following test strings were accepted by the NFA:
+
+1011
+1111011
+0001011
+
+
+Description of accepting run on 1011:
+
+The obvious test is to see if 1011 is accepted by the NFA. The initial state q0 can either keep 0,1 in q0, or send a 1 to q1. In this case, the first 1 in the string exists in both q0 and q1. Next, the 0 is sent to q2, and since q0 also loops on 0, 0 exists in q0 as well. Another 1 is sent from q2 to q3, and 1 also exists in q0 and q1. Finally, the last 1 is sent to q4, the accept state for strings ending in 1011. The string is rejected in states q0 and q1, which are not accept states.
+
+
+ii. Mention the three rejected strings you tested on. Describe one rejecting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was not accepted).
+
+The following test strings were rejected by the NFA:
+
+0000
+110111
+1100
+
+Description of rejecting run on 1100:
+
+The string 1100 is rejected by the NFA. The first 1 enters the NFA and exists in both state q0 and q1. The second 1 is rejected by q1 but is "accepted by q0", which loops back for both 0 and 1 characters. Next, the 0 exists in both q0 and q2. The final 0 is rejected by q2 and q0, neither of which is a final accept state. Hence, the string 1100 is rejected.

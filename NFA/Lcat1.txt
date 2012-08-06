@@ -1,0 +1,29 @@
+Joseph Reis
+CS 3100, HW #4
+Lcat1
+9/22/2011
+
+i. Mention the three accepted strings you tested on. Describe one accepting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was accepted).
+
+The following test strings were accepted by the NFA:
+
+1011
+1111011
+0001011
+
+Description of accepting run on 0001011:
+
+The first 3 0's stay in state q0. Once the string 1011 appears, the NFA takes the first 1, and sends to both q0 and q1. The next 0 exists in q0 and travels to q2. The second to last 1 exists in q0 and travels to q3. The final 1 goes to q4, is rejected in q0, and is sent on an epsilon jump to the accept state q5.
+
+
+ii. Mention the three rejected strings you tested on. Describe one rejecting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was not accepted).
+
+The following test strings were rejected by the NFA:
+
+10010
+110000
+1001011
+
+Description of rejecting run on 10010:
+
+The string 10010 is first sent to q0. From there, The first exists in q0 and also travels to q1. The 0 exists in q0 and travels to q2. The next 0 is rejected by both q0 and q2.

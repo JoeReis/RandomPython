@@ -1,0 +1,28 @@
+Joseph Reis
+CS 3100, HW #4
+Lunion1
+9/22/2011
+
+i. Mention the three accepted strings you tested on. Describe one accepting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was accepted).
+
+The following test strings were accepted by the NFA:
+
+11011
+1001
+1111
+
+Description of accepting run on 11011:
+
+The first 1 enters q0 (which has epsilon branches to both the 1011(q1 to q5) and div3 (q6 to q8) NFA), and the string 11011 is sent to both q1 and q6. The first 1 in the string still exists in q1, and is also sent to q2 and q7. The next 1 stays in q1, is rejected in q2, and is sent back to q6. The 0 stays in q1, is sent to q3, and stays in q6. The 1 exists in q1, q2, and travels to q4 and q7. Lastly, the final 1 is rejected in q1, but reaches accept states in both q5 (1011) and q6 (div3). 
+
+ii. Mention the three rejected strings you tested on. Describe one rejecting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was not accepted).
+
+The following test strings were rejected by the NFA:
+
+111
+1000
+101
+
+Description of rejecting run on 101:
+
+The first 1 enters q0 (which has epsilon branches to both the 1011(q1 to q5) and div3 (q6 to q8) NFA), and the string 101 is sent to both q1 and q6. The 1 still exists in q1, and is also sent to q2 and q7. The 0 exists in q1, and is sent to q3 and q8. The final 1 exists in q1, q2, q4, and q8. None of these are accept states for 101, and the string is rejected.

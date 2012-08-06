@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage{hyperref,xspace}
+
+\oddsidemargin 0cm
+\textwidth 17cm
+
+
+\newcommand\eg{{\em e.g.}\xspace}
+\newcommand\ie{{\em i.e.}\xspace}
+
+\begin{document}
+
+
+\title{\large\bf CS 3100 -- Models of Computation -- Fall 2011 \\
+ This assignment is worth 8\% of the total points for assignments \\
+ 100 points total}
+
+\maketitle
+
+\begin{center}
+{\bf Assignment 3, Posted on: 9/6  Due: 9/15 {\bf Thursday} 11:59pm}
+\end{center}
+
+\thispagestyle{empty}
+
+\begin{enumerate}
+
+\item ({\bf 20 points})\label{q1}
+  Write a Python function \verb|recognizes(D, N)| that returns
+  all strings of length $0 \leq i \leq N$  recognized by the given DFA {\tt D}.
+  Assume that $N \geq 0$.
+  %
+  Test it out on the the DFA that recognizes all strings ending in 
+  $0101$ that you constructed in Assignment 2 for $N=5$.
+  %
+  Submit the function in a file {\tt recognizes.py} as well as
+  an ASCII record of your testing session 
+  as file \verb|recognizes_tests.out|.
+
+\item ({\bf 40 points}) \label{q2}
+ Define a DFA that accepts all strings over \{0,1\} 
+  such that every block of four consecutive positions contains at 
+  least two 0s.
+  %
+  (This means: {\bf If} there are four consecutive positions, {\bf Then} in those
+  four positions, there must be at least two 0s.)
+  %
+  Call this language $L_{00}$.
+  %
+  Build this DFA using the \verb|mk_dfa| call (we will supply you
+  a working \verb|mk_dfa| for this assignment).
+  %
+  Next, use \verb|dot_dfa| and print this DFA out.
+  %
+  Submit the PDF drawing of this DFA, as file {\tt L00.pdf}.
+  %
+  Test this DFA on 12 strings
+  including two (2) strings of length $< 5$, 
+  five (5) strings that are accepted and of length $\ge 6$
+and
+  five (5) strings that are rejected and of length $\ge 6$.
+  %
+  Submit an ASCII record of your testing session
+  as file \verb|L00_tests.out|.
+
+\item ({\bf 20 points}) Draw a DFA for Question 3 of {\tt notes5.pdf}.
+  Next, enter this DFA and generate a PDF drawing for it. Argue why
+  this DFA works (in about 3-4 sentences), and also use function
+  \verb|accepts| to demonstrate that indeed it works on five (5) 
+  strings in the language and five (5) strings not in the language.
+  Submit your PDF as \verb|notes5_qn3_DFA.pdf|
+  and your writeup as \verb|notes5_qn3_DFA.out|.
+  
+\item ({\bf 20 points}) Draw a DFA for Question 5 of {\tt notes5.pdf}.
+  Next, enter this DFA and generate a PDF drawing for it, and submit it. Argue why
+  this DFA works (in about 3-4 sentences), and also use function
+  \verb|accepts| to demonstrate that indeed it works on five (5) 
+  strings in the language and five (5) strings not in the language.
+  Submit your PDF as \verb|notes5_qn5_DFA.pdf|
+  and your writeup as \verb|notes5_qn5_DFA.out|.
+
+\end{enumerate}
+
+\end{document}
+
+
+

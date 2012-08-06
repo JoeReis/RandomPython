@@ -1,0 +1,29 @@
+Joseph Reis
+CS 3100, HW #4
+Ldiv3
+9/22/2011
+
+i. Mention the three accepted strings you tested on. Describe one accepting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was accepted).
+
+The following test strings were accepted by the NFA:
+
+1100
+10010
+1111
+
+Description of accepting run on 1111:
+
+Because 1111 has an even number of 1's, it simply traversed between q0 (the initial and accept state) and q1. The first 1 enters the NFA at q0, and is sent to q1. q1 sends 1 back to q0. q0 sends 1 back to q1, which sends the final 1 to q0, the final accept state for 1111.
+
+
+ii. Mention the three rejected strings you tested on. Describe one rejecting run in a short paragraph of a few lines (mention which states the NFA went through and why the string was not accepted).
+
+The following test strings were rejected by the NFA:
+
+100
+1010
+111
+
+Description of rejecting run on 111:
+
+Since 111 has an odd number of 1's, it was rejected. The first 1 enters q0, and is sent to q1. q1 send the next 1 back to q0. q0 send the final 1 back to q1. Since q1 is not an accept state, the string 111 is rejected by the NFA.
